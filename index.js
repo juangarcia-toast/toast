@@ -3,8 +3,8 @@ var querystring = require('querystring');
 
 var post_data = querystring.stringify({
 	'grant_type': 'client_credentials',
-	'client_id': 'juan',
-	'client_secret': 'asdf!'	
+	'client_id': process.env.client_id || 'stratex',
+	'client_secret': process.env.client_secret || 'ad#asdsad324k234jks#'
 });
 
 var post_options = {
